@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tienda</title>
+
+<style>
+
+    body{
+        margin: 0   ;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Parte de arriba */
+    header{
+        background-color: #d4af37;
+        padding: 15px 40px;
+          display: flex;
+        text-align: center;
+    }
+
+    /* Parte de abajo */
+    main{   
+        background-color: #fff5f8;
+        height: 500px;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .producto{
+        background-color: white;
+        width: 200px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        text-align: center;
+        transition: 0.3s;
+    cursor: pointer;
+    }
+    .producto:hover{
+    transform: scale(1.8);}
+    
+    .producto img{width: 100%;
+    border-radius: 10px;}
+    
+.logo{
+    width: 120px;
+    height: 120px;  
+    margin-right: 20px;
+    border-radius: 100%;
+}
+nav{margin-left: auto;}
+nav button{background-color: #ffd1dc;
+            border: none;
+            padding: 10px 20px;
+            margin-left: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;} 
+nav button:hover{background-color: #ffd1dc;
+                 transform: scale(1.05);}
+nav a{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    text-decoration: none;
+    color: black;
+
+    transition: 0.3s;
+}
+</style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.jpeg" class="logo">
+        <h1>Bienvenido a Divine</h1>
+        <nav>
+            <a href="index.html">inicio</a>
+            <a href="a.html">contacto</a>   
+            <a href="divine.html">nosotros</a>
+
+
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="producto">
+            <h2>Collar de Delfin</h2>
+            <img src="producto.jpeg" alt="">
+            <p>$20.000</p>
+        </div>
+          <div class="producto">
+            <h2>Collar de Delfin</h2>
+            <img src="pulsera.jpeg" alt="">
+            <p>$35.000</p>
+        </div>
+          <div class="producto"s>
+            <h2>Collar de Delfin</h2>
+            <img src="Anillo.jpeg" alt="">
+            <p>$25.000</p>
+        </div>
+
+    </main>
+
+</body>
+</html>
